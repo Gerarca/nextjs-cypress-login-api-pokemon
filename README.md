@@ -21,6 +21,15 @@ Dashboard:
 Profile:
 ![alt text](https://github.com/Gerarca/nextjs-cypress-login-api-pokemon/blob/main/Docs/profile.png?raw=true)
 
+## Technologies
+* Next 13.0.5
+* Redux 
+* React paginate
+* Axios
+* React-dom
+* Cypress
+* Tailwindcss
+* flowbite
 
 
 First, run the development server:
