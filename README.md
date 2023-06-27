@@ -32,6 +32,41 @@ Profile:
 * flowbite
 
 
+## Middleware Next-Auth
+
+this project have file `middleware.ts`, this file is for control the routes that a user can access when he is not logged in, or is logged in:
+
+```
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { getToken } from 'next-auth/jwt';
+import { useAppSelector } from 'redux/hooks/hooks';
+ 
+export async function middleware(req: NextRequest) {
+
+  const token = useAppSelector((state)=>state.UserLogged.userLogged.token)
+  
+  const session = await getToken({ req, secret: token });
+ 
+  if (!session) {
+    const requestedPage = req.nextUrl.pathname;
+    const url = req.nextUrl.clone();
+    url.pathname = `/login`;
+    return NextResponse.redirect(url);
+  }
+ 
+  return NextResponse.next();
+}
+
+// See "Matching Paths" below to learn more
+export const config = {
+  matcher: ['/dashboard', '/profile']
+};
+```
+
+the token is obtained when a user logs in, therefore, if a user is logged in there is a token stored in a hook.
+
+
 First, run the development server:
 
 ```bash
