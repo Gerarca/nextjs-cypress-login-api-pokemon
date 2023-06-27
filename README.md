@@ -2,6 +2,27 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+![alt text](https://github.com/Gerarca/nextjs-cypress-login-api-pokemon/blob/main/Docs/react-next+cypress.png?raw=true)
+
+this project is about simple loggin, with cypress, router, taildwind, api pokemon
+
+Login:
+
+![alt text](https://github.com/Gerarca/nextjs-cypress-login-api-pokemon/blob/main/Docs/login.png?raw=true)
+
+Home:
+
+![alt text](https://github.com/Gerarca/nextjs-cypress-login-api-pokemon/blob/main/Docs/home.png?raw=true)
+
+Dashboard:
+![alt text](https://github.com/Gerarca/nextjs-cypress-login-api-pokemon/blob/main/Docs/dashboard.png?raw=true)
+
+
+Profile:
+![alt text](https://github.com/Gerarca/nextjs-cypress-login-api-pokemon/blob/main/Docs/profile.png?raw=true)
+
+
+
 First, run the development server:
 
 ```bash
