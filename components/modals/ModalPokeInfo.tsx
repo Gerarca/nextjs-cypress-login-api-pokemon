@@ -134,9 +134,6 @@ export default function ModalPokeInfo({
                     <div className="p-6 space-y-6">
                         <div className="w-full flex">
                             <div className="w-1/2">
-                                {
-                                    //@ts-ignore
-                                }
                                 <img className="w-48 h-48 mx-auto" src={pokemon.sprites.front_default} alt={pokemon.name} />
                             </div>
                             <div className="w-1/2">

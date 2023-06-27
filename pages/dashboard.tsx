@@ -94,12 +94,6 @@ const PokemonInitialInfo =  {
 
 const Dashboard = () => {
 
-  //  const navigate = useNavigate();
-    const isLogged = useAppSelector((state)=>state.UserLogged.userLogged.onLine)
-    console.log("isLogged: ", isLogged)
-    if(isLogged === false){
-    //    navigate("/");
-    }
     const [pokeData,setPokeData]=useState(Array<PokemonInfo>);
     const [loading,setLoading]=useState(true);
     const [url,setUrl]=useState("https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10")
@@ -127,7 +121,7 @@ const Dashboard = () => {
 
     useEffect(()=>{
         pokeFun();
-    },[url])
+    },[url]) 
 
     const pagginationHandler = (page:PageSelected) => { 
         setPokeData([]);

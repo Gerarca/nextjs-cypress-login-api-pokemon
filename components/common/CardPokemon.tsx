@@ -143,9 +143,6 @@ export default function CardPokemon({
                 :
                     <div key={index} className="bg-slate-50 max-w-xs rounded overflow-hidden shadow-lg m-4 rounded-lg transform transition duration-500 hover:scale-110 hover:shadow-2xl" onClick={()=>handlePokemonInfo(pokemon)} >
                         <div className="w-full flex">
-                            {
-                                //@ts-ignore
-                            }
                             <img className="w-48 h-48 mx-auto" src={pokemon.sprites.front_default} alt={pokemon.name} />
                         </div>                            
                         <div className="px-6 py-1">
@@ -158,8 +155,6 @@ export default function CardPokemon({
                             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{pokemon.moves[3].move.name}</span>
                         </div>
                     </div>
-                    
-                
             }
             {
                 showModal?

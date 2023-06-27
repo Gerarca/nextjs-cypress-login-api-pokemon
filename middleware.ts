@@ -5,10 +5,9 @@ import { useAppSelector } from 'redux/hooks/hooks';
  
 export async function middleware(req: NextRequest) {
 
-  const token = useAppSelector((state)=>state.UserLogged.userLogged.token)
-  
+  let token = useAppSelector((state)=>state.UserLogged.userLogged.token)
+
   const session = await getToken({ req, secret: token });
- 
   if (!session) {
     const requestedPage = req.nextUrl.pathname;
     const url = req.nextUrl.clone();

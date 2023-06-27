@@ -13,6 +13,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@types/react-paginate": "^7.1.1",
+    "@types/socket.io-client": "^3.0.0",
     "axios": "^1.4.0",
     "daisyui": "^2.42.1",
     "flowbite": "^1.6.6",
@@ -24,7 +25,8 @@
     "react-dom": "18.2.0",
     "react-paginate": "^8.2.0",
     "react-redux": "^8.1.1",
-    "socket.io": "^4.7.0"
+    "socket.io": "^4.7.0",
+    "socket.io-client": "^4.7.0"
   },
   "devDependencies": {
     "@types/node": "18.11.9",
